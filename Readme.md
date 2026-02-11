@@ -34,8 +34,6 @@ MealMate/
 ├── logo.png # MealMate logo image
 └── README.md # Project documentation
 
----
-
 ## ⚙️ How to Run the Project
 
 1. Download or clone the project folder.
@@ -89,3 +87,4 @@ Developed as a front-end practice project.
 ## 📄 License
 
 This project is for educational purposes.
+
