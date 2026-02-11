@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MealMate | Food Delivery App</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <img src="logo.png" alt="MealMate Logo" />
+      </div>
+
+      <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search for food..." />
+        <button onclick="searchFood()">Search</button>
+      </div>
+
+      <div class="nav-links">
+        <a href="#">Offers</a>
+        <a href="#">Sign In</a>
+        <div class="cart-btn">
+          Cart
+          <span class="cart-count" id="cartCount">0</span>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <h2>Delicious Food, Delivered Fast</h2>
+      <p>Your favorite meals from local restaurants, anytime.</p>
+      <button>Order Now</button>
+    </section>
+
+    <section class="menu" id="menu">
+      <h2>Popular Dishes</h2>
+
+      <div class="food-grid">
+        <div class="food-card">
+          <img
+            src="https://www.sargento.com/assets/Uploads/Recipe/Image/burger_0__FillWzgwMCw4MDBd.jpg"
+          />
+          <div class="food-info">
+            <h3>Cheese Burger</h3>
+            <p>Juicy grilled burger with cheese</p>
+            <div class="price">₹199</div>
+            <button>Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="food-card">
+          <img
+            src="https://www.atelierdeschefs.fr/_next/image/?url=https%3A%2F%2Fadc-dev-images-recipes.s3.eu-west-1.amazonaws.com%2Fpizza_pepperoni.jpg&w=1920&q=80"
+          />
+          <div class="food-info">
+            <h3>Pepperoni Pizza</h3>
+            <p>Classic Pepperoni pizza with cheese</p>
+            <div class="price">₹299</div>
+            <button>Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="food-card">
+          <img
+            src="https://b.zmtcdn.com/data/pictures/chains/1/2800901/1f8b4b00a89350f81d7cf4846b62520e.jpg"
+          />
+          <div class="food-info">
+            <h3>Chicken Biryani</h3>
+            <p>Authentic spices with tender chicken</p>
+            <div class="price">₹249</div>
+            <button>Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="food-card">
+          <img
+            src="https://skinnyspatula.com/wp-content/uploads/2022/10/Creamy_Garlic_Chicken_Pasta_0-735x735.jpg"
+          />
+          <div class="food-info">
+            <h3>Creamy Pasta</h3>
+            <p>Rich and creamy Italian pasta</p>
+            <div class="price">₹219</div>
+            <button>Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2026 MealMate. All rights reserved.</p>
+    </footer>
+
+    <!-- Connect JavaScript file -->
+    <script src="scripting.js"></script>
+  </body>
+</html>
