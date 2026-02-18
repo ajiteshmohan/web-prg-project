@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MealMate | Food Delivery App</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -92,6 +96,54 @@
     <footer>
       <p>© 2026 MealMate. All rights reserved.</p>
     </footer>
+
+    <!-- Cart Panel -->
+    <div class="cart-panel" id="cartPanel">
+      <div class="cart-header">
+        <h3>Your Cart</h3>
+        <button id="closeCart">✖</button>
+      </div>
+
+      <div class="cart-items" id="cartItems"></div>
+
+      <div class="cart-footer">
+        <h4>Total: ₹<span id="cartTotal">0</span></h4>
+        <button class="pay-btn" id="payBtn">Proceed to Pay</button>
+      </div>
+    </div>
+
+    <!-- Offers Modal -->
+    <div class="offers-modal" id="offersModal">
+      <div class="offers-box">
+        <button class="close-offers" id="closeOffers">✖</button>
+        <h2>🎓 Student Special Offer</h2>
+        <p>
+          Verified students can enjoy an exclusive
+          <strong>10% discount</strong> on their total order. Simply verify your
+          student status at checkout to unlock the savings!
+        </p>
+        <button class="verify-btn">Verify Now</button>
+      </div>
+    </div>
+
+    <!-- Sign In Modal -->
+    <div class="signin-modal" id="signinModal">
+      <div class="signin-box">
+        <button class="close-signin" id="closeSignin">✖</button>
+
+        <h2>Welcome Back 👋</h2>
+        <p>Sign in using your phone number to continue</p>
+
+        <input type="tel" id="phoneInput" placeholder="Enter phone number" />
+
+        <button class="signin-btn" id="sendOtpBtn">Send OTP</button>
+
+        <div class="otp-section" id="otpSection" style="display: none">
+          <input type="text" placeholder="Enter OTP" />
+          <button class="verify-btn">Verify</button>
+        </div>
+      </div>
+    </div>
 
     <!-- Connect JavaScript file -->
     <script src="scripting.js"></script>
